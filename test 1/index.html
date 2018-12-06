@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="f
+        'orm-group">
+          <input type="text" class="form-control" id="Datetime" placeholder="Datetime">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="City" placeholder="City">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="State" placeholder="State">
+        </div>
+      </div>      
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="Country" placeholder="Country">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="Shape" placeholder="Shape">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="Comments" placeholder="Comments">
+        </div>
+      </div>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <button id="load-btn" class="btn btn-primary">Search
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Datetime</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration Minutes</th>
+              <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <ul class="pagination">
+        <li class="disabled">
+          <span>
+            <span aria-hidden="true">&laquo;</span>
+          </span>
+        </li>
+        <li class="active">
+          <span>1<span class="sr-only"></span></span>
+          <span>2<span class="sr-only"></span></span>
+          <span>3<span class="sr-only"></span></span>
+          <span>4<span class="sr-only"></span></span>
+          <span>5<span class="sr-only"></span></span>
+        </li>
+        <li class="active">
+          <span>
+            <span aria-hidden="true">&raquo;</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

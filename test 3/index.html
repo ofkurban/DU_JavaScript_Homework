@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIENS-R-REAL-3</title> 
+
+     <!--AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+</body>
+    <br /><br />
+    <div class="container">
+        <h1 align="center">Aliens Are Here!</h1><br />
+        <table id="dataSet-table" class= table "table-bordered">
+            <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Country</th>
+                  <th>Shape</th>
+                  <th>Duration</th>
+                  <th>Comments</th>              
+                </tr>
+              </thead>
+        </table>
+    </div>
+    <script src="dataSet.js" type="text/javascript"></script>
+</html>
+
+
+
+<!-- dataSet.json = employee.json -->
+<script>
+    $(document).ready(function(){
+        $('#dataSet-table').DataTable({
+            data: dataSet,
+            columns: [
+                {data:"Date"},
+                {data:"City" },
+                {data:"State" },
+                {data:"Country" },
+                {data:"Shape" },
+                {data:"Duration" },
+                {data:"Comments" }        
+                
+            ]
+        });
+    });
+    
+    </script>
